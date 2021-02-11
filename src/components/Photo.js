@@ -2,7 +2,7 @@
 const Photo = props => {
   return (
     <li>
-      <img src={props.url} alt={ props.title } />
+      <img src={ props.url } alt={ props.title } />
     </li>
   );
 }
