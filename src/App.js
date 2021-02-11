@@ -49,7 +49,7 @@ const App = props => {
         <Route exact path="/" component={ () => <Redirect to="/search/star wars" /> } />
         <Route exact path="/search/:param" component={ () => <PhotoContainer loading={loading} title={ searchTerm } imgs={ photos } /> } />
         <Route exact path="/notfound" component={ NotFound } />
-        <Route component={ () => <Redirect to="/notfound" /> } />
+        <Route path="/*" component={ () => <Redirect to="/notfound" /> } />
       </Switch>
     </div>
   );
