@@ -3,6 +3,7 @@
 /src/config.js
 /app-env
 /.env
+/.env.development
 
 # dependencies
 /node_modules

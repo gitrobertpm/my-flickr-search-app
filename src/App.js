@@ -23,7 +23,6 @@ import './css/App.css';
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const App = props => {
-  console.log(process.env);
   /* Create state for photos, search term, and loading indicator */
   const [photos, setPhotos] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
