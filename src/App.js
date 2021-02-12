@@ -6,19 +6,23 @@ import SearchForm from './components/SearchForm';
 import Nav from './components/Nav';
 import PhotoContainer from './components/PhotoContainer';
 import NotFound from './components/NotFound';
-import localApiKey from './config';
 
 import './css/App.css';
 
+
+/* To use your own Flickr key
+ * To use your own Flickr key:
+ * Create a src/config.js file
+ * Use your own key in the line below
+ * 
+ * const apiKey = "_your_api_key_here_"
+ * 
+ * Move the above line to config.js and export the apiKey
+ * Import the apiKey from config.js and use it to replace variable value below
+ */
+const apiKey = process.env.REACT_APP_API_KEY;
+
 const App = props => {
-  
-  /* Setting api key as an environment variable */
-  let apiKey;
-  if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") {
-    apiKey = localApiKey;
-  } else if (process.env.NODE_ENV === "production") {
-    apiKey = process.env.REACT_APP_API_KEY;
-  }
 
   /* Create state for photos, search term, and loading indicator */
   const [photos, setPhotos] = useState([]);
