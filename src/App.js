@@ -6,11 +6,19 @@ import SearchForm from './components/SearchForm';
 import Nav from './components/Nav';
 import PhotoContainer from './components/PhotoContainer';
 import NotFound from './components/NotFound';
-import apiKey from './config';
+import localApiKey from './config';
 
 import './css/App.css';
 
 const App = props => {
+  
+  /* Setting api key as an environment variable */
+  let apiKey;
+  if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") {
+    apiKey = localApiKey;
+  } else if (process.env.NODE_ENV === "production") {
+    apiKey = process.env.REACT_APP_API_KEY;
+  }
 
   /* Create state for photos, search term, and loading indicator */
   const [photos, setPhotos] = useState([]);
