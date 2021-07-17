@@ -57,7 +57,7 @@ const App = props => {
       <SearchForm />
       <Nav />
       <Switch>
-        <Route exact path="/" component={ () => <Redirect to="/search/star wars" /> } />
+        <Route exact path="/" component={ () => <Redirect to="/search/nebulae" /> } />
         <Route exact path="/search/:param" component={ () => <PhotoContainer loading={loading} title={ searchTerm } imgs={ photos } /> } />
         <Route exact path="/notfound" component={ NotFound } />
         <Route component={ () => <Redirect to="/notfound" /> } />
