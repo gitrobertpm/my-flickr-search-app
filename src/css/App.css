@@ -39,6 +39,7 @@ a {
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
   cursor: pointer;
+  transition: all 0.4s ease-out;
 }
 
 input {
@@ -50,6 +51,7 @@ input {
   border-right: none;
   border-radius: 0.35em 0 0 0.35em;
   outline: none;
+  transition: all 0.4s ease-out;
 }
 
 .main-nav {
@@ -70,14 +72,16 @@ input {
   padding: 5px;
   color: #fff;
   border: 1px solid transparent;
+  transition: all 0.4s ease-out;
 }
 
 .main-nav .active,
 .main-nav a:hover,
 .search-form button:hover {
-  border: 1px solid rgba(210, 30, 255, 0.3);
-  box-shadow: 3px 3px 9px rgba(210, 30, 255, 0.3) inset, -3px -3px 9px rgba(210, 30, 255, 0.3) inset;
-  filter: drop-shadow(1px 1px 3px rgba(210, 30, 255, 0.3));
+  background-color:  rgba(66, 6, 82, 0.9);
+  border: 1px solid rgba(210, 30, 255, 0.7);
+  box-shadow: 6px 6px 9px rgba(210, 30, 255, 0.3) inset, -6px -6px 9px rgba(210, 30, 255, 0.3) inset;
+  /* filter: drop-shadow(1px 1px 3px rgba(210, 30, 255, 0.3)); */
 }
 
 .photo-container ul {
