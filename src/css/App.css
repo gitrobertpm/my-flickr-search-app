@@ -81,7 +81,6 @@ input {
   background-color:  rgba(66, 6, 82, 0.9);
   border: 1px solid rgba(210, 30, 255, 0.7);
   box-shadow: 6px 6px 9px rgba(210, 30, 255, 0.3) inset, -6px -6px 9px rgba(210, 30, 255, 0.3) inset;
-  /* filter: drop-shadow(1px 1px 3px rgba(210, 30, 255, 0.3)); */
 }
 
 .photo-container ul {
