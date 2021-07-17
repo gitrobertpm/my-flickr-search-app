@@ -39,6 +39,7 @@ a {
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
   cursor: pointer;
+  box-shadow: 6px 6px 9px rgba(38, 42, 253, 0.2) inset, -6px -6px 9px rgba(38, 42, 253, 0.2) inset;
   transition: all 0.4s ease-out;
 }
 
@@ -72,6 +73,7 @@ input {
   padding: 5px;
   color: #fff;
   border: 1px solid transparent;
+  box-shadow: 6px 6px 9px rgba(38, 42, 253, 0.2) inset, -6px -6px 9px rgba(38, 42, 253, 0.2) inset;
   transition: all 0.4s ease-out;
 }
 
@@ -86,7 +88,7 @@ input {
 .photo-container ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   -ms-align-items: flex-start;
   align-items: flex-start;
 }
@@ -128,7 +130,7 @@ input {
   }
 
   .container {
-    max-width: 960px;
+    max-width: 940px;
     margin: auto;
   }
 
