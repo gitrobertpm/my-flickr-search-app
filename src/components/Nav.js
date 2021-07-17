@@ -5,9 +5,9 @@ const Nav = () => {
   return (
     <nav className="main-nav">
       <ul>
-        <li><NavLink to="/search/javascript">JavaScript</NavLink></li>
-        <li><NavLink to="/search/treehouse">Treehouse</NavLink></li>
-        <li><NavLink to="/search/sunshine">Sunshine</NavLink></li>
+        <li><NavLink to="/search/solar eclipse">Solar Eclipse</NavLink></li>
+        <li><NavLink to="/search/aurora borealis">Aurora Borealis</NavLink></li>
+        <li><NavLink to="/search/bioluminescence">Bioluminescence</NavLink></li>
       </ul>
     </nav>
   );
