@@ -53,16 +53,21 @@ const App = props => {
   };
 
   return (
-    <div className="App container">
-      <SearchForm />
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={ () => <Redirect to="/search/nebulae" /> } />
-        <Route exact path="/search/:param" component={ () => <PhotoContainer loading={loading} title={ searchTerm } imgs={ photos } /> } />
-        <Route exact path="/notfound" component={ NotFound } />
-        <Route component={ () => <Redirect to="/notfound" /> } />
-      </Switch>
-    </div>
+    <>
+      <header>
+        <h1>React Flickr Gallery</h1>
+        <SearchForm />
+        <Nav />
+      </header>
+      <div className="App container">
+        <Switch>
+          <Route exact path="/" component={ () => <Redirect to="/search/nebulae" /> } />
+          <Route exact path="/search/:param" component={ () => <PhotoContainer loading={loading} title={ searchTerm } imgs={ photos } /> } />
+          <Route exact path="/notfound" component={ NotFound } />
+          <Route component={ () => <Redirect to="/notfound" /> } />
+        </Switch>
+      </div>
+    </>
   );
 };
 

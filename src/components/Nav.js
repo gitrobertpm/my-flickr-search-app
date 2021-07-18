@@ -8,6 +8,7 @@ const Nav = () => {
         <li><NavLink to="/search/solar eclipse">Solar Eclipse</NavLink></li>
         <li><NavLink to="/search/aurora borealis">Aurora Borealis</NavLink></li>
         <li><NavLink to="/search/bioluminescence">Bioluminescence</NavLink></li>
+        <li><NavLink to="/search/murmuration">Murmuration</NavLink></li>
       </ul>
     </nav>
   );
