@@ -4,7 +4,6 @@ body {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   color: #3f4850;
-  
 }
 
 header {
@@ -118,19 +117,23 @@ input {
 
 .main-nav li {
   width: 100%;
-  /* margin-bottom: 1em; */
   margin: 0 auto;
 }
 
 .main-nav a {
   display: block;
   background: deepskyblue;
-  /* border-radius: 0 4px 4px 4px; */
   padding: 15px;
   color: #fff;
   border: 1px solid rgba(38, 59, 253, 0.9);
   box-shadow: 6px 6px 9px rgba(38, 42, 253, 0.3) inset, -6px -6px 9px rgba(38, 42, 253, 0.3) inset;
   transition: all 0.4s ease-out;
+}
+
+.main-nav li:nth-of-type(1) a,
+.main-nav li:nth-of-type(2) a,
+.main-nav li:nth-of-type(3) a {
+  border-bottom: none;
 }
 
 .main-nav .active,
@@ -144,7 +147,7 @@ input {
 .photo-container {
   padding: 15px;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 0 4px 4px 4px;
+  border-radius: 4px;
 }
 
 .photo-container ul {
@@ -268,7 +271,7 @@ input {
   }
 
   .slider-scale {
-    max-width: 270px;
+    max-width: 255px;
   }
 
   .slider {
@@ -281,16 +284,6 @@ input {
   }
 
   .photo-container {
-    width: calc(100% - 345px);
+    width: calc(100% - 330px);
   }
-}
-
-@media only screen and (min-width: 1400px) {
-  /* .photo-container ul {
-    justify-content: left;
-  }
-  
-  .photo-container ul li {
-    margin-right: 15px;
-  } */
 }
