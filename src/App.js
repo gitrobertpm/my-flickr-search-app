@@ -37,6 +37,7 @@ const App = props => {
     const param = props.location.pathname.slice(props.location.pathname.lastIndexOf('/') + 1);
     setSearchTerm(param);
     getImages(param);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.location.pathname]);
 
   /* Request images from Flickr, add result to state and handling loading state  */
@@ -62,8 +63,8 @@ const App = props => {
   return (
     <div className="App container">
       <header>
-        <img src={logo} className="logo-react" />
-        <img src={logo} className="logo-react logo-reflection" />
+        <img src={logo} alt="React logo" className="logo-react" />
+        <img src={logo} alt="React logo" className="logo-react logo-reflection" />
         <h1>React Flickr App</h1>
         <h1 className="heading-reflection">React Flickr App</h1>
       </header>

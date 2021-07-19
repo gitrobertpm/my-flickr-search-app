@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <div className="not-found">
       <h2>404 — Not Found</h2>
-      <img src={bubbles} />
+      <img src={bubbles} alt="Bubbles" />
       <p>Unfortunately, the page you're looking for doesn't exist.</p>
       <nav className="main-nav">
         <ul>

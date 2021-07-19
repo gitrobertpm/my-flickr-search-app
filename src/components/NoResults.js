@@ -6,7 +6,7 @@ import bubbles from '../img/bubbles.jpg';
 const NoResults = () => {
   return (
     <div className="no-results">
-      <img src={bubbles} />
+      <img src={bubbles} alt="Bubbles" />
       <h2>Zero Results</h2>
       <p>Unfortunately, that search didn't return any results.</p>
       <p>Please try again.</p>
