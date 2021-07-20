@@ -286,4 +286,10 @@ input {
   .photo-container {
     width: calc(100% - 330px);
   }
+
+  .no-results,
+  .not-found {
+    max-width: calc(100% - 330px);
+    background: rgba(255, 255, 2250.9);
+  }
 }

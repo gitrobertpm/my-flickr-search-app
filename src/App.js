@@ -46,7 +46,7 @@ const App = props => {
       if (searchTerm) {
         setLoading(true);
         const raw = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${searchTerm}&per_page=${perPage}&format=json&nojsoncallback=1`);
-        const data = await raw.json(); console.log(data);
+        const data = await raw.json(); //console.log(data);
         setPhotos(data.photos.photo);
         setLoading(false);
       }
